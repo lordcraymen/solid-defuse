@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "module": "esnext", // Solid recommends using ES modules
+    "target": "es6", // or higher
+    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "preserve", // Solid's JSX is not the same as React's
+    "jsxImportSource": "solid-js", // This tells the compiler to use SolidJS's JSX transformations
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "strict": true, 
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true // Useful if you're not interested in type-checking the JS code in node_modules
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
+
+  
